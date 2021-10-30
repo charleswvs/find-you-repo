@@ -3,6 +3,7 @@ import { useHistory } from 'react-router';
 import RepositoryListItem from '../../components/RepositoryListItem';
 import { getRepos } from '../../services/storage';
 
+// este arquivo tem como propósito listas todos os repositórios e filtrá-los
 function Home() {
   const history = useHistory();
   const repos = getRepos();
@@ -11,7 +12,7 @@ function Home() {
 
   useEffect(() => {
     if(searchValue.length){
-      const filtered = repos.filter(r => r.name.includes(searchValue));
+      const filtered = repos.filter(r => r.name.toUpperCase().includes(searchValue.toUpperCase()));
       setFilteredRepos(filtered);
     } else{
       setFilteredRepos(repos)

@@ -7,6 +7,7 @@ import {
 import Home from '../pages/Home';
 import Repository from '../pages/Repository';
 
+//Realiza o roteamento da aplicação
 function Routes() {
   return (
   <Router>

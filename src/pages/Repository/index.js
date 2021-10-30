@@ -42,6 +42,7 @@ function Repository() {
     }))
   }
 
+  // Logíca de seleção de tecnologia
   const handleSelectTech = (tech) => {
     const technologies = repository.technologies;
     const idx = technologies.findIndex(t => t === tech)
@@ -58,11 +59,13 @@ function Repository() {
     }))
   }
 
+  // Logíca para salvar um repositório
   const handleSave = () => {
     saveRepo(repository);
     history.push('/')
   }
 
+  // Logíca para deletar um repositório
   const handleDelete = () => {
     deleteRepo(repository)
     history.push('/')
