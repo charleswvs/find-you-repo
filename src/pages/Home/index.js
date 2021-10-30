@@ -25,7 +25,7 @@ function Home() {
         Meus Repositórios
       </h1>
       <input 
-        class="search-box" 
+        className="search-box" 
         placeholder="Buscar repositório" 
         type="text" 
         value={searchValue}
