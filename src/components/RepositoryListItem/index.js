@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Este é o elemento de repositório que aparece na tela home
 function RepositoryListItem({
   repository,
   onClick,

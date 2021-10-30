@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Este é o elemento que lista cada tecnologia na tela de Repositório.
 function TechnologyItem({
   value,
   isTechSelected,
